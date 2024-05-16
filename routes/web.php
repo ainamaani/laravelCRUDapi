@@ -16,5 +16,11 @@ Route::post('/students/register', [StudentController::class, 'store']);
 
 Route::get('/students', [StudentController::class, 'index']);
 
+Route::get('/students/{id}', [StudentController::class, 'show']);
+
+Route::delete('/students/delete/{id}', [StudentController::class, 'destroy']);
+
+Route::put('/students/update/{id}', [StudentController::class, 'update']);
+
 
 
